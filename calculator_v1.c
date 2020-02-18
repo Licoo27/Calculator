@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float addition (float terme1, float terme2){
-    return terme1 + terme2;
+float addition (float term1, float term2){
+    return term1 + term2;
 }
 
-float soustraction (float nombre1, float nombre2){
-   return nombre1 - nombre2;
+float subtraction (float number1, float number2){
+   return number1 - number2;
 }
 
-float multiplication (float facteur1, float facteur2){
-    return facteur1 * facteur2;
+float multiplication (float factor1, float factor2){
+    return factor1 * factor2;
 }
 
-float division (float dividende, float diviseur){
-    return dividende / diviseur;
+float division (float dividend, float divider){
+    return dividend / divider;
 }
 int main()
 {
@@ -23,16 +23,16 @@ int main()
     while(1)
 	{
 
-		printf("Avec quelle operation voulez-vous travaillez ? \n");
+		printf("What operation you want to work with ? \n");
 		printf("1.addition(+) \n");
-		printf("2.soustraction(-) \n");
+		printf("2.subtraction(-) \n");
 		printf("3.multiplication(*) \n");
 		printf("4.division(/) \n");
-		printf("1, 2, 3 ou 4 ?\t");
+		printf("1, 2, 3 or 4 ?\t");
 		scanf("%d", &operation);
 
 		if ( (operation != 1) &&  (operation != 2)   &&   (operation != 3)   &&  (operation != 4)  )
-       		printf("cette operation n'existe pas\n\n");
+       		printf("This operation does not exist\n\n");
 		else
 			break;
 
@@ -41,9 +41,9 @@ int main()
     float n1=0;
     float n2=0;
 
-    printf("premier nombre\t");
+    printf("first number\t");
     scanf("%f", &n1);
-    printf("deuxieme nombre\t");
+    printf("second number\t");
     scanf("%f", &n2);
 
 
@@ -54,7 +54,7 @@ int main()
         result = addition(n1, n2);
         break;
     case 2:
-        result = soustraction(n1, n2);
+        result = subtraction(n1, n2);
         break;
     case 3:
         result = multiplication(n1, n2);
